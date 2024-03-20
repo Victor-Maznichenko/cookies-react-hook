@@ -6,9 +6,6 @@ function App() {
 	const [value, setValue] = useState("");
 	const { cookieValue, setCookie, deleteCookie } = useCookie({
 		name: "login",
-		options: {
-			"max-age": 2,
-		},
 	});
 
 	const handleChange = ({ target }: ChangeEvent<HTMLInputElement>) => {
